@@ -1,0 +1,12 @@
+<project  name="learnant"default="compile" basedir=".">
+<target name="compile">
+<path id="compile.classpath">
+<fileset dir="WebContent/WEB-INF/lib">
+<include name="*.jar"/>
+</fileset>
+</path>
+<javac srcdir="src">
+<classpath refid="compile.classpath">
+</javac>
+</target>
+</project>
